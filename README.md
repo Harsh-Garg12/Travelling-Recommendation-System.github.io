@@ -25,4 +25,5 @@ TF-IDF for a word in a document is calculated by multiplying two different metri
 </ul>
 
 <h2>Interface of web application</h2>
+
 ![Capture](https://user-images.githubusercontent.com/80332356/206663598-5c2b31e8-746d-4b5f-8277-d022de8f4c69.PNG)
