@@ -10,7 +10,13 @@ TF-IDF is used in Information Retrieval for feature extraction purposes and it i
 
 Term Frequency- Frequency of the word in the current document to the total number of words in the document. It signifies the occurrence of the word in a document and gives higher weight when the frequency is more so it is divided by document length to normalize.
 
-<centre><img src = "https://www.jcchouinard.com/wp-content/uploads/2021/10/image-5.png"></centre>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+<img src = "https://www.jcchouinard.com/wp-content/uploads/2021/10/image-5.png" class="center">
 
 Inverse Document Frequency- Total Number of Documents to the frequency occurrence of documents containing the word. It signifies the rarity of the word as the word occurring the document is less the IDF increases. It helps in giving a higher score to rare terms in the documents.
 
