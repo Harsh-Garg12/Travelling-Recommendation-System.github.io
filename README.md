@@ -24,4 +24,5 @@ TF-IDF for a word in a document is calculated by multiplying two different metri
     <li>The inverse document frequency(idf) of a word across a set of documents. The closer it is 0, the more common a word is.</li>
 </ul>
 
+<h2>Interface of web application</h2>
 ![Capture](https://user-images.githubusercontent.com/80332356/206663598-5c2b31e8-746d-4b5f-8277-d022de8f4c69.PNG)
