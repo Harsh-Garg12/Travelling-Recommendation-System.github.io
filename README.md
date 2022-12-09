@@ -20,8 +20,7 @@ TF-IDF is statistical measure that evaluates how relevant a word is to a documen
 
 TF-IDF for a word in a document is calculated by multiplying two different metrics:
 <ul>
-    <li>The term frequency of a word in a document(Tf)</li>
-
+    <li>The term frequency of a word in a document(Tf).</li>
     <li>The inverse document frequency(idf) of a word across a set of documents. The closer it is 0, the more common a word is.</li>
 </ul>
 
