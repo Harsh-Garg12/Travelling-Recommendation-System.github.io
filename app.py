@@ -26,7 +26,7 @@ def recommend(City, Place):
     else:
         distances = sorted(list(enumerate(cosine_similarity3[10000-index])), reverse=True, key=lambda x: x[1])
     recommend_places = []
-    for i in distances[1:4]:
+    for i in distances[1:7]:
         recommend_places.append(((pickle_off.iloc[i[0]].City, pickle_off.iloc[i[0]].Place), (pickle_off.iloc[i[0]].Rating,
                                  pickle_off.iloc[i[0]].Count)))
     return recommend_places
@@ -80,21 +80,21 @@ if __name__ == "__main__":
                 st.write(round(recommend_info[2]['rating'],2), ' average based on ', recommend_info[2]['count'], ' reviews')
                 st.image(recommend_info[2]['image'])
 
-        # with st.container():
-        #     col1, col2, col3 = st.columns(3)
-        #     with col1:
-        #         st.subheader(recommend_info[3]['city'] + ', ' + recommend_info[3]['place'])
-        #         st.write(round(recommend_info[3]['rating'], 2), ' average based on ', recommend_info[3]['count'], ' reviews')
-        #         st.image(recommend_info[3]['image'])
-        #
-        #     with col2:
-        #         st.subheader(recommend_info[4]['city'] + ', ' + recommend_info[4]['place'])
-        #         st.write(round(recommend_info[4]['rating'], 2), ' average based on ', recommend_info[4]['count'], ' reviews')
-        #         st.image(recommend_info[4]['image'])
-        #
-        #     with col3:
-        #         st.subheader(recommend_info[5]['city'] + ', ' + recommend_info[5]['place'])
-        #         st.write(round(recommend_info[5]['rating'],2), ' average based on ', recommend_info[5]['count'], ' reviews')
-        #         st.image(recommend_info[5]['image'])
+        with st.container():
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.subheader(recommend_info[3]['city'] + ', ' + recommend_info[3]['place'])
+                st.write(round(recommend_info[3]['rating'], 2), ' average based on ', recommend_info[3]['count'], ' reviews')
+                st.image(recommend_info[3]['image'])
+        
+            with col2:
+                st.subheader(recommend_info[4]['city'] + ', ' + recommend_info[4]['place'])
+                st.write(round(recommend_info[4]['rating'], 2), ' average based on ', recommend_info[4]['count'], ' reviews')
+                st.image(recommend_info[4]['image'])
+        
+            with col3:
+                st.subheader(recommend_info[5]['city'] + ', ' + recommend_info[5]['place'])
+                st.write(round(recommend_info[5]['rating'],2), ' average based on ', recommend_info[5]['count'], ' reviews')
+                st.image(recommend_info[5]['image'])
 
 
