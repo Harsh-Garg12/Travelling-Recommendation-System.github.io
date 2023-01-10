@@ -1,6 +1,7 @@
 <center><h2>Interface of web application</h2></center>
 
-![Capture](https://user-images.githubusercontent.com/80332356/206663598-5c2b31e8-746d-4b5f-8277-d022de8f4c69.PNG)
+![Capture](https://user-images.githubusercontent.com/80332356/211536141-c8e89305-1002-4d7b-a313-67d185a53f46.PNG)
+
 # Content Based Filtering Model
 
 <h1>Recommendation though review of the tourism places</h1>
